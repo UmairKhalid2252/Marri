@@ -1,0 +1,311 @@
+/*
+=================
+universal styling
+=================
+*/
+
+*,
+*::before,
+*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*
+=====================
+html elements styling
+=====================
+*/
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*
+=======================
+utility classes styling
+=======================
+*/
+.container{
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+}
+.btn{
+   display:inline-block ;
+   text-decoration: none;
+}
+.btn-primary{
+    background-color: #2289FF;
+    border: 1px solid #2289FF;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-secondary{
+    color: gray;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+/*
+=========================
+======header styling=====
+=========================
+*/
+
+/*
+=====================
+header-navbar styling
+=====================
+*/
+
+.header{
+    display:flex;
+}
+  /* nav-bar for dextop mood */
+input[type='checkbox'],  
+.hamburger{
+    display: none;
+}  
+.nav-bar{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 5rem;
+    align-items:center;
+}
+.nav-bar .menu{
+    display: flex;
+    font-size: 1.4rem;
+    padding-left: 30rem;
+}
+.nav-bar .menu ul{
+    display: flex;
+    padding: 0.5rem;
+}
+.nav-bar .menu ul a{
+    color: #0F2B4A;
+    padding:0 2.5rem;
+}
+.nav-bar .menu ul a:hover{
+    color: #000000;
+    font-size: 1.5rem;
+}
+.nav-bar .nav-btn a{
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem; 
+    margin-right: 1rem;
+}
+.nav-bar .nav-btn .btn-secondary:hover{
+    background-color:rgba(169, 169, 169, 0.47);
+    color: #0F2B4A; 
+}
+
+.nav-bar .nav-btn .btn-primary:hover{
+    background-color: #0d7af6;
+}
+
+
+
+/*
+=======================
+header-showcase styling
+=======================
+*/
+
+.show-case{
+    display:flex;
+    margin-top:8rem;
+}
+.main-content{
+    margin-right: 6rem; 
+    margin-top: 8rem;
+}
+.main-content h1{
+    font-size: 7rem;  
+    color: #0F2B4A;
+}
+.main-content p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #0F2B4A;
+}
+
+.search-bar{
+    display: flex;
+    border: 1px solid rgba(211, 211, 211, 0.627);
+    border-radius: 5px;
+    box-shadow:0 0 2px rgba(128, 128, 128, 0.619) ;
+    width: 45rem;
+    padding: 1rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.search-bar-text1,
+.search-bar-text2{
+display: inline-block;
+padding: 0% 1rem;
+font-size: 1.3rem;
+color: #0F2B4A;
+}
+
+.search-bar-btn a{
+    padding:0.8rem  2rem;
+   text-align: center;
+   margin-top: 0.4rem;
+   font-size: 1.4rem;
+}
+.search-bar-btn a:hover{
+    background-color: #0d7af6;
+}
+.main-img{
+    margin-right: -6rem;   
+}
+.main-img img{
+  width: 630px;
+  height: 630px;
+}
+
+/*
+=======================
+header-logos styling
+=======================
+*/
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+=================
+help-desk styling
+=================
+*/
+
+
+.help-desk{
+    
+    text-align: center;
+    justify-content: center;
+    margin-top: 8rem;
+    color: #0F2B4A;
+}
+.help-desk > h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #0F2B4A;
+}
+.help-desk-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+}
+.help-desk-cards > .card1,
+.help-desk-cards > .card2,
+.help-desk-cards > .card3{
+    width: 220px;
+    height: 220px;
+    padding-top: 2.5rem;
+    box-shadow:0 0 2px rgba(128, 128, 128, 0.619) ;
+}
+.help-desk-cards > .card1 h3,
+.help-desk-cards > .card2 h3,
+.help-desk-cards > .card3 h3{
+    font-size:1.6rem ;
+    color: #0F2B4A;
+    margin-top: 1rem;
+
+}
+.help-desk-cards > .card1 p,
+.help-desk-cards > .card2 p,
+.help-desk-cards > .card3 p{
+    padding: 1.2rem 2rem;
+    color: #0F2B4A;
+}
+.help-desk-cards > .card1:hover,
+.help-desk-cards > .card2:hover,
+.help-desk-cards > .card3:hover{
+    background-color: rgba(211, 211, 211, 0.426);
+    transition: trasnform 5s ease-in-out;
+}
+
+
+
+/*
+=================
+feature styling
+=================
+*/
+.features{
+    margin-top: 8rem;
+}
+.feature-content{
+   display: flex;
+   justify-content: space-between;
+}
+.feature-text{
+    color: #0F2B4A;
+    width: 380px;
+}
+.feature-text h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.feature-text p{
+    font-size: 1.4rem;
+}
+.feature-btn a{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    padding:0.8rem  2rem;
+}
+.feature-btn .btn-primary:hover{
+    background-color: #0d7af6;
+}
+.feature-btn .btn-secondary:hover {
+    background-color:rgba(169, 169, 169, 0.47);
+    color: #0F2B4A;
+} 
+
+
+
+.feature-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+.feature-cards img{
+    padding: 1rem;
+    width: 550px;
+}
+.testimonial img{
+    width: 1200px;
+    margin-left: 3rem;
+}
+.newsletter{
+    background-color: #0F2B4A;
+}
+.newsletter > img{
+    width: 1200px;
+}
+.footer > img{
+    width: 1200px;
+}
+
+
+
+
+
+
+
